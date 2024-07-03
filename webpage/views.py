@@ -4,7 +4,7 @@ from django.shortcuts import render, HttpResponse
 
 
 def indexPage(request):
-    return HttpResponse("Hello, This is my web page")
+    return render(request, 'index.html')
 
 
 def aboutUS(request):
