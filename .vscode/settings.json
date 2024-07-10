@@ -41,5 +41,6 @@
             }
         ]
     },
-    "CodeGPT.apiKey": "CodeGPT Plus Beta"
+    "CodeGPT.apiKey": "CodeGPT Plus Beta",
+    "workbench.settings.useSplitJSON": true
 }

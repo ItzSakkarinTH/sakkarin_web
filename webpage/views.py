@@ -7,9 +7,9 @@ def indexPage(request):
     return render(request, 'index.html')
 
 
-def aboutUS(request):
-    return HttpResponse("เกี่ยวกับฉัน")
+def aboutPage(request):
+    return render(request, 'about.html')
 
 
-def contactUs(request):
-    return HttpResponse("ติดต่อฉัน")
+def contactPage(request):
+    return render(request, 'contact.html')
