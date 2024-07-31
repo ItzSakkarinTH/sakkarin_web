@@ -1,7 +1,120 @@
 {% extends "base.html" %}
 <!---->
 {% block content %}
-<h1>AboutMe</h1>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakkarin Hanthong - โปรแกรมเมอร์มืออาชีพ</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Kanit', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f0;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c7a7b;
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+            background-color: #f0ffff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .section h2 {
+            color: #2c7a7b;
+            border-bottom: 2px solid #2c7a7b;
+            padding-bottom: 10px;
+        }
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-item {
+            background-color: #81e6d9;
+            color: #285e61;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .project {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .project h3 {
+            color: #2c7a7b;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sakkarin Hanthong</h1>
+        <p style="text-align: center; font-size: 1.2em; color: #4a5568;">โปรแกรมเมอร์ผู้สร้างสรรค์นวัตกรรมและเขียนโค้ดได้ทุกอย่าง</p>
+        
+        <div class="section">
+            <h2>ประวัติโดยย่อ</h2>
+            <p>Sakkarin Hanthong คือนักพัฒนาซอฟต์แวร์มืออาชีพที่มีความเชี่ยวชาญในการเขียนโค้ดได้หลากหลายภาษาและแพลตฟอร์ม ด้วยประสบการณ์กว่า 10 ปีในวงการ IT Sakkarin ได้สร้างผลงานที่โดดเด่นและเป็นที่ยอมรับในระดับสากล</p>
+        </div>
+        
+        <div class="section">
+            <h2>ทักษะความเชี่ยวชาญ</h2>
+            <div class="skill-list">
+                <span class="skill-item">Full-Stack Development</span>
+                <span class="skill-item">AI & Machine Learning</span>
+                <span class="skill-item">Blockchain</span>
+                <span class="skill-item">Cloud Computing</span>
+                <span class="skill-item">IoT</span>
+                <span class="skill-item">AR/VR</span>
+                <span class="skill-item">Cybersecurity</span>
+                <span class="skill-item">Quantum Computing</span>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>ผลงานที่โดดเด่น</h2>
+            <div class="project">
+                <h3>AI Assistant ที่ชาญฉลาด</h3>
+                <p>พัฒนา AI ที่สามารถเข้าใจและตอบสนองต่อความต้องการของผู้ใช้ได้อย่างแม่นยำ</p>
+            </div>
+            <div class="project">
+                <h3>ระบบ Blockchain สำหรับการเลือกตั้ง</h3>
+                <p>สร้างระบบที่ปลอดภัยและโปร่งใสสำหรับการเลือกตั้งในระดับประเทศ</p>
+            </div>
+            <div class="project">
+                <h3>แพลตฟอร์ม IoT สำหรับ Smart Home</h3>
+                <p>ออกแบบและพัฒนาระบบที่เชื่อมโยงอุปกรณ์ IoT ภายในบ้าน เพื่อยกระดับคุณภาพชีวิตของผู้อยู่อาศัย</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>วิสัยทัศน์</h2>
+            <p>"ผมเชื่อว่าเทคโนโลยีสามารถเปลี่ยนแปลงโลกให้ดีขึ้นได้ และผมจะใช้ความสามารถของผมในการสร้างสรรค์นวัตกรรมที่จะยกระดับคุณภาพชีวิตของผู้คน"</p>
+        </div>
+    </div>
+</body>
+</html>
 
 
 {% endblock content %}
