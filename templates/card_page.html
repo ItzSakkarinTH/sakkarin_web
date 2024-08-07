@@ -11,19 +11,34 @@
       transform: translateY(-10px);
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
+    .card-wrapper {
+      padding: 15px; /* Adjust padding here */
+    }
+
+    .row {
+      margin: -15px; /* Remove margin to compensate for padding */
+    }
+
+    .col-lg-3,
+    .col-md-4,
+    .col-sm-6 {
+      padding: 15px; /* Adjust padding here */
+    }
   </style>
   <div class="row">
     {% for i in list %}
-      <div class="col-sm-3 mb-4">
-        <div class="card card-hover" style="width: 100%;">
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card card-hover card-wrapper" style="width: 100%;">
           <img src="https://i.pinimg.com/736x/7f/f3/f7/7ff3f78c3b4e5e7c01a144dab384e08a.jpg" class="card-img" alt="" />
           <div class="card-body">
             <h5 class="card-title">INFJ</h5>
-            <p class="card-text">ผู้สนับสนุน (Advocate ) (INFJ)</p>
+            <p class="card-text">ผู้สนับสนุน (Advocate) (INFJ)</p>
             <a href="#" class="btn btn-primary">READ</a>
           </div>
         </div>
-        <div class="card card-hover" style="width: 100%;">
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card card-hover card-wrapper" style="width: 100%;">
           <img src="https://i.pinimg.com/736x/96/48/97/964897018b5da9dee77509581b3e9d98.jpg" class="card-img" alt="" />
           <div class="card-body">
             <h5 class="card-title">ENFP</h5>
@@ -31,19 +46,63 @@
             <a href="#" class="btn btn-primary">READ</a>
           </div>
         </div>
-        <div class="card card-hover" style="width: 100%;">
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card card-hover card-wrapper" style="width: 100%;">
           <img src="https://i.pinimg.com/736x/60/11/59/601159e792d6b584c5e8940b799f6d58.jpg" class="card-img" alt="" />
           <div class="card-body">
             <h5 class="card-title">INFP</h5>
-            <p class="card-text">ผู้ไกล่เกลี่ย (Mediator) (INFP) </p>
+            <p class="card-text">ผู้ไกล่เกลี่ย (Mediator) (INFP)</p>
             <a href="#" class="btn btn-primary">READ</a>
           </div>
         </div>
-        <div class="card card-hover" style="width: 100%;">
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card card-hover card-wrapper" style="width: 100%;">
           <img src="https://i.pinimg.com/564x/e7/ee/0a/e7ee0a84e6b880dd2f35d6b15f72ca8e.jpg" class="card-img" alt="" />
           <div class="card-body">
             <h5 class="card-title">ENFJ</h5>
-            <p class="card-text">ผู้เป็นตัวเอก (Protagonist) (ENFJ) </p>
+            <p class="card-text">ผู้เป็นตัวเอก (Protagonist) (ENFJ)</p>
+            <a href="#" class="btn btn-primary">READ</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card card-hover card-wrapper" style="width: 100%;">
+          <img src="https://i.pinimg.com/736x/18/91/95/189195618e0225016d1fc759bc467c2a.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h5 class="card-title">INTP</h5>
+            <p class="card-text">นักตรรกะ (Logician) (INTP)</p>
+            <a href="#" class="btn btn-primary">READ</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card card-hover card-wrapper" style="width: 100%;">
+          <img src="https://i.pinimg.com/736x/c4/30/27/c4302765b46097305e78ec5a509d1486.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h5 class="card-title">ENTP</h5>
+            <p class="card-text">นักโต้วาที (Debater) (ENTP)</p>
+            <a href="#" class="btn btn-primary">READ</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card card-hover card-wrapper" style="width: 100%;">
+          <img src="https://i.pinimg.com/736x/67/15/5c/67155c4cdc6166559a4b8c26139fbc37.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h5 class="card-title">INTJ</h5>
+            <p class="card-text">ผู้มีเหตุผล (Architect) (INTJ)</p>
+            <a href="#" class="btn btn-primary">READ</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card card-hover card-wrapper" style="width: 100%;">
+          <img src="https://i.pinimg.com/736x/52/2a/7c/522a7cd5227e7625bb2c22e766ce508b.jpg" class="card-img" alt="" />
+          <div class="card-body">
+            <h5 class="card-title">ENTJ</h5>
+            <p class="card-text">ผู้บัญชาการ (Commander) (ENTJ)</p>
             <a href="#" class="btn btn-primary">READ</a>
           </div>
         </div>
@@ -52,4 +111,3 @@
   </div>
 </div>
 {% endblock content %}
-
