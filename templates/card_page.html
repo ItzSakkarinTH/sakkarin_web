@@ -2,10 +2,20 @@
 <!---->
 {% block content %}
 <div class="container">
+  <style>
+    .card-hover {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  </style>
   <div class="row">
-    {% for image_url in list %}
-      <div class="col-sm-3">
-        <div class="card" style="width: 100%;">
+    {% for i in list %}
+      <div class="col-sm-3 mb-4">
+        <div class="card card-hover" style="width: 100%;">
           <img src="https://i.pinimg.com/736x/7f/f3/f7/7ff3f78c3b4e5e7c01a144dab384e08a.jpg" class="card-img" alt="" />
           <div class="card-body">
             <h5 class="card-title">INFJ</h5>
@@ -13,7 +23,7 @@
             <a href="#" class="btn btn-primary">READ</a>
           </div>
         </div>
-        <div class="card" style="width: 100%;">
+        <div class="card card-hover" style="width: 100%;">
           <img src="https://i.pinimg.com/736x/96/48/97/964897018b5da9dee77509581b3e9d98.jpg" class="card-img" alt="" />
           <div class="card-body">
             <h5 class="card-title">ENFP</h5>
@@ -21,7 +31,7 @@
             <a href="#" class="btn btn-primary">READ</a>
           </div>
         </div>
-        <div class="card" style="width: 100%;">
+        <div class="card card-hover" style="width: 100%;">
           <img src="https://i.pinimg.com/736x/60/11/59/601159e792d6b584c5e8940b799f6d58.jpg" class="card-img" alt="" />
           <div class="card-body">
             <h5 class="card-title">INFP</h5>
@@ -29,7 +39,7 @@
             <a href="#" class="btn btn-primary">READ</a>
           </div>
         </div>
-        <div class="card" style="width: 100%;">
+        <div class="card card-hover" style="width: 100%;">
           <img src="https://i.pinimg.com/564x/e7/ee/0a/e7ee0a84e6b880dd2f35d6b15f72ca8e.jpg" class="card-img" alt="" />
           <div class="card-body">
             <h5 class="card-title">ENFJ</h5>
