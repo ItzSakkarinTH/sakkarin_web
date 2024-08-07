@@ -11,7 +11,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Dashboard - SB Admin</title>
+    <title>SakkarinWebsite</title>
     <link
       href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css"
       rel="stylesheet"
@@ -25,7 +25,7 @@
   <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
       <!-- Navbar Brand-->
-      <a class="navbar-brand ps-3" href="index.html">SakkarinWebsite</a>
+      <a class="navbar-brand ps-3" href="{% url "index" %}">SakkarinWebsite</a>
       <!-- Sidebar Toggle-->
       <button
         class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
@@ -98,6 +98,18 @@
                   <i class="fas fa-tachometer-alt"></i>
                 </div>
                 ติดต่อ
+              </a>
+              <a class="nav-link" href="{% url "table-page" %}">
+                <div class="sb-nav-link-icon">
+                  <i class="fas fa-tachometer-alt"></i>
+                </div>
+                หน้า table
+              </a>
+              <a class="nav-link" href="{% url "card-page" %}">
+                <div class="sb-nav-link-icon">
+                  <i class="fas fa-tachometer-alt"></i>
+                </div>
+                หน้า card
               </a>
             </div>
           </div>
