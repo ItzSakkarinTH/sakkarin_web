@@ -29,3 +29,14 @@ def card_Page(request):
     cardlist["list"] = lt
 
     return render(request, 'card_page.html', cardlist)
+
+
+def cardColorPage(request):
+    context = {
+        'color':'',
+    }
+
+    if request.method == "GET":
+        context['color'] = request.GET.get('color')
+
+    return render(request, 'card_color.html', context)
