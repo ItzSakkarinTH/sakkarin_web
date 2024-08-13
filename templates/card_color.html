@@ -1,19 +1,27 @@
 {% extends "base.html" %}
 <!---->
 {% block content %}
-<div class="container">
-  <h1>{{ color }}</h1>
-  <div class="row mt-4">
-    <div class="col"><a href="?color=all">การ์ดทั้งหมด</a></div>
-    <div class="col"><a href="?color=red">สีแดง</a></div>
-    <div class="col"><a href="?color=green">สีเขียวและขาว</a></div>
-    <div class="col"><a href="?color=blue">สีน้ำเงิน</a></div>
+<div class="container mt-5">
+  <h1 class="text-center mb-4">{{ color }}</h1>
+  <div class="row text-center mb-4">
+    <div class="col">
+      <a href="?color=all" class="btn btn-outline-dark">การ์ดทั้งหมด</a>
+    </div>
+    <div class="col">
+      <a href="?color=red" class="btn btn-outline-danger">สีแดง</a>
+    </div>
+    <div class="col">
+      <a href="?color=green" class="btn btn-outline-success">สีเขียวและขาว</a>
+    </div>
+    <div class="col">
+      <a href="?color=blue" class="btn btn-outline-primary">สีน้ำเงิน</a>
+    </div>
   </div>
 
-  <div class="row mt-4">
+  <div class="row">
     {% if color == 'all' or color == 'red' %}
-    <div class="col">
-      <div class="card text-bg-danger mb-4" style="max-width: 18rem;">
+    <div class="col-md-3 mb-4">
+      <div class="card text-bg-danger h-100">
         <div class="card-header">Header</div>
         <div class="card-body">
           <h5 class="card-title">Warning card title</h5>
@@ -24,8 +32,8 @@
     {% endif %}
 
     {% if color == 'all' or color == 'green' %}
-    <div class="col">
-      <div class="card text-bg-success mb-4" style="max-width: 18rem;">
+    <div class="col-md-3 mb-4">
+      <div class="card text-bg-success h-100">
         <div class="card-header">Header</div>
         <div class="card-body">
           <h5 class="card-title">Success card title</h5>
@@ -36,8 +44,8 @@
     {% endif %}
 
     {% if color == 'all' or color == 'blue' %}
-    <div class="col">
-      <div class="card text-bg-primary mb-4" style="max-width: 18rem;">
+    <div class="col-md-3 mb-4">
+      <div class="card text-bg-primary h-100">
         <div class="card-header">Header</div>
         <div class="card-body">
           <h5 class="card-title">Primary card title</h5>
@@ -48,8 +56,8 @@
     {% endif %}
 
     {% if color == 'all' or color == 'green'%}
-    <div class="col">
-      <div class="card text-bg-light mb-4" style="max-width: 18rem;">
+    <div class="col-md-3 mb-4">
+      <div class="card text-bg-light h-100">
         <div class="card-header">Header</div>
         <div class="card-body">
           <h5 class="card-title">Light card title</h5>
