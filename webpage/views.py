@@ -33,7 +33,7 @@ def card_Page(request):
 
 def cardColorPage(request):
     context = {
-        'color':'',
+        'color': '',
     }
 
     if request.method == "GET":
