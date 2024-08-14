@@ -24,11 +24,11 @@ def table_Page(request):
 
 
 def card_Page(request):
-    cardlist = {}
+    context = {}
     lt = list(range(0, 100))
-    cardlist["list"] = lt
+    context["list"] = lt
 
-    return render(request, 'card_page.html', cardlist)
+    return render(request, 'card_page.html', context)
 
 
 def cardColorPage(request):
@@ -40,3 +40,18 @@ def cardColorPage(request):
         context['color'] = request.GET.get('color')
 
     return render(request, 'card_color.html', context)
+
+def formPage(request):
+    email = ''
+    password = ''
+
+    context = {}
+
+    if request.method == "POST":
+        email = request.POST.get('email')
+        password = request.POST.get('my-password')
+
+    context['email'] = email
+    context['password'] = password
+
+    return render(request, 'form_page.html', context)
